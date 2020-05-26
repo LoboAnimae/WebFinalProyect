@@ -1,0 +1,91 @@
+#welcomeToMyLife {
+  position: relative;
+  top: 63px;
+  width: 100vw;
+  height: 1000px;
+  background-color: #fff;
+  left: -8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 850px;
+  text-align: center;
+}
+
+#welcomeToMyLifeText {
+  font-size: x-large;
+  animation: fadein 3s forwards;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#secondWelcomeText {
+  opacity: 0%;
+  animation: fadein 2s forwards;
+  animation-delay: 1.5s;
+  font-size: xx-large;
+  text-align: center;
+}
+
+#scrollDown {
+  margin-top: 355px;
+  opacity: 0%;
+  animation: fadein 2s forwards;
+  animation-delay: 7s;
+}
+#scrollDownArrow {
+  height: 24px;
+  opacity: 0%;
+  margin: 10px;
+  animation: fadein 2s forwards;
+  animation-delay: 9s;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    font-size: xx-large;
+  }
+  10% {
+    font-size: xxx-large;
+  }
+  15% {
+    font-size: xx-large;
+  }
+  30% {
+    font-size: xxx-large;
+  }
+  50% {
+    font-size: xx-large;
+  }
+  100% {
+    font-size: xx-large;
+  }
+}
+
+@keyframes bob {
+  0% {
+    margin-top: 10px;
+  }
+  25% {
+    margin-top: 15px;
+  }
+  75% {
+    margin-top: 5px;
+  }
+  100% {
+    margin-top: 10px;
+  }
+}

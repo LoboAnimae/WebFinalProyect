@@ -1,0 +1,98 @@
+#whoAmI {
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  top: 244px;
+  background-color: #fff;
+  left: -8px;
+  height: 503px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  flex-direction: column;
+}
+
+#whoAmIText {
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  left: -474px;
+  min-width: 850px;
+  line-height: 10;
+  font-size: 2em;
+  top: -225px;
+  opacity: 1;
+}
+
+#whoAmIText2 {
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  left: -481px;
+  min-width: 850px;
+  font-size: x-large;
+  top: -200px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#firstText,
+#secondText {
+  width: 286px;
+  height: auto;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+#firstText {
+  background-color: #078b45;
+  color: white;
+  border-top-left-radius: 42px;
+  text-align: right;
+}
+
+#secondText {
+  background-color: #3b3a3b;
+  color: #fff;
+  border-bottom-right-radius: 42px;
+}
+
+#imageWho {
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  top: -133px;
+  left: -145px;
+  z-index: 2;
+}
+
+#imageWho img {
+  width: 187px;
+  height: auto;
+  transform: scale(2);
+  transition: all 0.25s ease-in-out;
+}
+
+#imageWho img:hover {
+  transform: scale(3);
+}
+
+#imageComputerScreen img {
+  font-family: 'Raleway', sans-serif;
+  position: absolute;
+  top: -391px;
+  width: 300px;
+  height: auto;
+  left: -681px;
+  z-index: 1;
+}
+
+#antigua {
+  font-family: 'Raleway', sans-serif;
+  height: 415px;
+  z-index: 1;
+  position: relative;
+  left: 929px;
+  top: -300px;
+}

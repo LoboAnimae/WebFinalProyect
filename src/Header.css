@@ -1,0 +1,88 @@
+#navbar {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+  background-color: #3b3a3b;
+  color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  min-width: 850px;
+  text-decoration: none;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 71px;
+  }
+}
+
+#navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+#navWho {
+  opacity: 0%;
+  animation: shine 1s forwards;
+  animation-delay: 0.25s;
+  transition: all 500ms;
+}
+#navWhere {
+  opacity: 0%;
+  animation: shine 1s forwards;
+  animation-delay: 0.5s;
+  transition: all 500ms;
+}
+#navGrow {
+  opacity: 0%;
+  animation: shine 1s forwards;
+  animation-delay: 0.75s;
+  transition: all 500ms;
+}
+#navEnd {
+  opacity: 0%;
+  animation: shine 1s forwards;
+  animation-delay: 1s;
+  transition: all 500ms;
+}
+#navRightNow {
+  opacity: 0%;
+  animation: shine 1s forwards;
+  animation-delay: 1.25s;
+  transition: all 500ms;
+}
+#navContact {
+  opacity: 0%;
+  animation: shine 1s forwards;
+  animation-delay: 1.5s;
+  transition: all 500ms;
+}
+
+@keyframes shine {
+  to {
+    opacity: 100%;
+  }
+}
+
+#navWho:hover,
+#navWhere:hover,
+#navGrow:hover,
+#navEnd:hover,
+#navRightNow:hover,
+#navContact:hover {
+  background-color: #554f55;
+  transform: scale(1.5);
+}
+
+#textNav {
+  margin-top: 27px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
