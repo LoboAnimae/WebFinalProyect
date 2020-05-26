@@ -15,12 +15,13 @@
 #whoAmIText {
   font-family: 'Raleway', sans-serif;
   position: relative;
-  left: -474px;
+  left: -453px;
   min-width: 850px;
   line-height: 10;
   font-size: 2em;
-  top: -225px;
+  top: -62px;
   opacity: 1;
+  z-index: 10;
 }
 
 #whoAmIText2 {

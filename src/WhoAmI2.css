@@ -1,0 +1,33 @@
+#whoAmI2 {
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  top: 244px;
+  background-color: #fff;
+  left: -8px;
+  height: 503px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+#ordered {
+  padding-left: 25%;
+  position: relative;
+  height: 90%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 15% 15% 30%;
+  justify-items: center;
+  align-items: center;
+}
+
+#pictureContainer {
+  width: 250px;
+}
+
+.bg {
+  width: 500px;
+  height: auto;
+  background-size: 150px;
+}

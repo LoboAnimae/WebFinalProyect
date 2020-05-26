@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-html {
+html,
+body {
   font-family: 'Raleway', sans-serif;
-  overflow-x: hidden;
   scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
 }

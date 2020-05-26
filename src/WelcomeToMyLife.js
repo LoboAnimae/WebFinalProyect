@@ -5,6 +5,9 @@ import Arrow from './media/arrow.svg'
 const WhoAmI = () => {
   return (
     <div>
+      <div id='square1'></div>
+      <div id='square2'></div>
+      <div id='square3'></div>
       <div id='welcomeToMyLifeText'>Welcome to my life</div>
       <div id='secondWelcomeText'>From my heart to you</div>
       <div id='scrollDown'>
@@ -17,7 +20,7 @@ const WhoAmI = () => {
       <script>
         {setTimeout(() => {
           document.getElementById('secondWelcomeText').style.cssText =
-            'animation: heartbeat 1.75s; opacity: 100%; font-size: xx-large; animation-iteration-count: 2;'
+            'color: #3b3a3b; animation: heartbeat 1.75s; opacity: 100%; font-size: xx-large; animation-iteration-count: 2;'
         }, 3500)}
 
         {setTimeout(() => {
