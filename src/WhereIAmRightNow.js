@@ -1,9 +1,37 @@
 import React, { Component } from 'react'
 import './WhereIAmRightNow.css'
 import ImageCarousel from './ImageCarousel'
+import gsap from 'gsap'
+import { useIntersection } from 'react-use'
 
 const MyProjects = () => {
-  const [currentGame, setCurrentGame] = React.useState(0)
+  const sectionRef = React.useRef(null)
+  const intersection = useIntersection(sectionRef, {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.5,
+  })
+  const fadeIn = (element) => {
+    gsap.to(sectionRef.current, 2, {
+      opacity: 1,
+      y: -50,
+      ease: 'power4.out',
+      stagger: {
+        amount: 0.3,
+      },
+    })
+  }
+
+  const fadeOut = (element) => {
+    gsap.to(sectionRef.current, 2, {
+      opacity: 0,
+      y: 50,
+      ease: 'power4.out',
+    })
+  }
+  intersection && intersection.intersectionRatio < 0.5
+    ? fadeOut('#title')
+    : fadeIn('#title')
 
   const links = [
     {
@@ -31,8 +59,10 @@ const MyProjects = () => {
   return (
     <div id='myProjects'>
       <div id='decoration'></div>
-      <div id='title'>Check out some of my work!</div>
-      <div id='internalNavBar'>
+      <div id='title' ref={sectionRef}>
+        Check out some of my work!
+      </div>
+      <div id='internalNavBar' ref={sectionRef}>
         <div id='story'>
           <a href={links[0].url}>Read a small HTML story!</a>
         </div>
@@ -50,7 +80,7 @@ const MyProjects = () => {
         </div>
       </div>
       <div id='outerContainer'>
-        <div id='carousel'>
+        <div id='carousel' ref={sectionRef}>
           <ImageCarousel />
         </div>
       </div>

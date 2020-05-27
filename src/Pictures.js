@@ -53,7 +53,7 @@ const Pictures = () => {
     }
   }
   const item = slides[index]
-  useInterval(increment, 5000)
+  useInterval(increment, 3000)
 
   const transitions = useTransition(slides[index], (item) => item.id, {
     from: { opacity: 0, transform: 'scale(1.1)' },
