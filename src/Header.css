@@ -29,26 +29,26 @@
 }
 
 #navWho {
-  opacity: 0%;
+  opacity: 0;
   animation: shine 1s forwards;
   animation-delay: 0.25s;
   transition: all 500ms;
 }
 #navWhere {
-  opacity: 0%;
+  opacity: 0;
   animation: shine 1s forwards;
   animation-delay: 0.5s;
   transition: all 500ms;
 }
 
 #navRightNow {
-  opacity: 0%;
+  opacity: 0;
   animation: shine 1s forwards;
   animation-delay: 0.75s;
   transition: all 500ms;
 }
 #navContact {
-  opacity: 0%;
+  opacity: 0;
   animation: shine 1s forwards;
   animation-delay: 1s;
   transition: all 500ms;
@@ -59,7 +59,7 @@
     opacity: 0;
   }
   to {
-    opacity: 100;
+    opacity: 1;
   }
 }
 
