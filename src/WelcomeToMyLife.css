@@ -2,7 +2,7 @@
   position: relative;
   top: 63px;
   width: 100vw;
-  height: 1000px;
+  height: 750px;
   background-color: #fff;
   left: -8px;
   display: flex;
@@ -11,6 +11,8 @@
   justify-content: center;
   min-width: 850px;
   text-align: center;
+  overflow: hidden;
+  margin-bottom: 50px;
 }
 
 #welcomeToMyLifeText {

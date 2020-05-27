@@ -21,25 +21,23 @@ const Header = () => {
       <div id='navbar'>
         <div id='navWho'>
           <div id='textNav'>
-            <a href='#whoAmIText'>Who Am I?</a>
+            <a href='#whoAmI'>Who Am I?</a>
           </div>
         </div>
         <div id='navWhere'>
           <div id='textNav'>
-            <a href='#textNav'>The Beginnings</a>
+            <a href='#whoAmI2'>What I Can Do</a>
           </div>
         </div>
-        <div id='navGrow'>
-          <div id='textNav'>Growing Up</div>
-        </div>
-        <div id='navEnd'>
-          <div id='textNav'>Where Did I End Up</div>
-        </div>
         <div id='navRightNow'>
-          <div id='textNav'>Where I am Right Now</div>
+          <div id='textNav'>
+            <a href='#whereIAmRightNow'>What I Have Done</a>
+          </div>
         </div>
         <div id='navContact'>
-          <div id='textNav'>Where to Find Me</div>
+          <div id='textNav'>
+            <a href='#thatsIt'>Contact me!</a>
+          </div>
         </div>
       </div>
     </div>

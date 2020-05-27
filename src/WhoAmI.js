@@ -15,7 +15,7 @@ function WhoAmI() {
   const fadeIn = (element) => {
     gsap.to(sectionRef.current, 2, {
       opacity: 1,
-      x: 50,
+      y: -50,
       ease: 'power4.out',
       stagger: {
         amount: 0.3,
@@ -26,7 +26,7 @@ function WhoAmI() {
   const fadeOut = (element) => {
     gsap.to(sectionRef.current, 2, {
       opacity: 0,
-      x: -50,
+      y: 50,
       ease: 'power4.out',
     })
   }

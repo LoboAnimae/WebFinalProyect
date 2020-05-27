@@ -6,6 +6,9 @@ body {
   scroll-behavior: smooth;
   padding: 0;
   margin: 0;
+  user-select: none;
+  background-image: url('./media/background.png');
+  background-size: 100vw;
 }
 
 body {

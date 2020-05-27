@@ -10,6 +10,8 @@ import pic5 from './media/c-sharp.png'
 import pic6 from './media/cpp.png'
 import pic7 from './media/psql.png'
 
+let pseudoStyle = { fontSize: 'x-large' }
+
 const slides = [
   {
     id: 0,
@@ -17,7 +19,7 @@ const slides = [
   },
   {
     id: 1,
-    url: pic2,
+    url: pic4,
   },
   {
     id: 2,
@@ -25,7 +27,7 @@ const slides = [
   },
   {
     id: 3,
-    url: pic4,
+    url: pic2,
   },
   {
     id: 4,
@@ -51,7 +53,7 @@ const Pictures = () => {
     }
   }
   const item = slides[index]
-  useInterval(increment, 20000)
+  useInterval(increment, 5000)
 
   const transitions = useTransition(slides[index], (item) => item.id, {
     from: { opacity: 0, transform: 'scale(1.1)' },
@@ -71,13 +73,41 @@ const Pictures = () => {
           }}
         ></animated.div>
 
-        {item.id === 0 && <div id='name'>Python</div>}
-        {item.id === 1 && <div id='name'>Laravel</div>}
-        {item.id === 2 && <div id='name'>Java</div>}
-        {item.id === 3 && <div id='name'>JavaScript</div>}
-        {item.id === 4 && <div id='name'>C#</div>}
-        {item.id === 5 && <div id='name'>C++</div>}
-        {item.id === 6 && <div id='name'>PostgreSQL</div>}
+        {item.id === 0 && (
+          <animated.div style={pseudoStyle} id='name'>
+            Python
+          </animated.div>
+        )}
+        {item.id === 1 && (
+          <animated.div style={pseudoStyle} style={pseudoStyle} id='name'>
+            Laravel
+          </animated.div>
+        )}
+        {item.id === 2 && (
+          <animated.div style={pseudoStyle} id='name'>
+            Java
+          </animated.div>
+        )}
+        {item.id === 3 && (
+          <animated.div style={pseudoStyle} id='name'>
+            JavaScript
+          </animated.div>
+        )}
+        {item.id === 4 && (
+          <animated.div style={pseudoStyle} id='name'>
+            C#
+          </animated.div>
+        )}
+        {item.id === 5 && (
+          <animated.div style={pseudoStyle} id='name'>
+            C++
+          </animated.div>
+        )}
+        {item.id === 6 && (
+          <animated.div style={pseudoStyle} id='name'>
+            PostgreSQL
+          </animated.div>
+        )}
       </div>
     )
   })

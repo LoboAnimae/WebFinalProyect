@@ -40,28 +40,17 @@
   animation-delay: 0.5s;
   transition: all 500ms;
 }
-#navGrow {
+
+#navRightNow {
   opacity: 0%;
   animation: shine 1s forwards;
   animation-delay: 0.75s;
   transition: all 500ms;
 }
-#navEnd {
-  opacity: 0%;
-  animation: shine 1s forwards;
-  animation-delay: 1s;
-  transition: all 500ms;
-}
-#navRightNow {
-  opacity: 0%;
-  animation: shine 1s forwards;
-  animation-delay: 1.25s;
-  transition: all 500ms;
-}
 #navContact {
   opacity: 0%;
   animation: shine 1s forwards;
-  animation-delay: 1.5s;
+  animation-delay: 1s;
   transition: all 500ms;
 }
 
