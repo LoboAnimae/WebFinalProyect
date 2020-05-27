@@ -52,10 +52,10 @@ a {
 
 @keyframes fadein {
   from {
-    opacity: 0%;
+    opacity: 0;
   }
   to {
-    opacity: 100%;
+    opacity: 100;
   }
 }
 
@@ -152,9 +152,9 @@ a {
 
 @keyframes fadeinShapes {
   to {
-    opacity: 0%;
+    opacity: 0;
   }
   from {
-    opacity: 50%;
+    opacity: 50;
   }
 }
